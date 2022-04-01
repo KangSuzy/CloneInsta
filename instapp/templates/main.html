@@ -13,13 +13,152 @@
   href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
   rel="stylesheet">
 
+    <style>
+      .main_feed{
+        display: flex; 
+        justify-content: center; 
+        padding-top: 50px;
+        background-color: #FAFAFA;
+      }
+      .left_feed{
+        margin-right: 100px; 
+        width: 500px; 
+        height:2000px; 
+        display: flex; 
+        flex-direction: column;
+      }
+
+      .feed_name{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+    
+      .feed_name_txt{
+        font-size: 14px;
+        padding: 0px 10px;
+        font-weight: bold;
+      }
+    
+      .profile_box {
+        width: 40px;
+        height: 40px;
+        border-radius: 70%;
+        overflow: hidden;
+      }
+      .profile_img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .feed_box{
+        background-color: white;
+        width: 480px;
+        margin: 10px;
+        min-height: auto;
+        padding-bottom: 10px;
+      }
+
+      .feed_img{
+        width: 100%;
+        object-fit: contain;
+      }
+
+      .feed_content{
+        padding: 0px 10px;
+      }
+
+      .feed_like{
+        padding: 0px 10px;
+      }
+    
+      .feed_reply{
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .feed_txt{
+        font-size: 14px;
+      }
+
+      .feed_icon{
+        padding: 5px 5px 0px 5px;
+        display: flex;
+        justify-content: space-between;
+      }span{
+         padding-right: 5px;
+      }
+
+      .right_feed{
+        padding-top: 20px;
+        width: 300px; 
+        height:1000px; 
+        left: 72%; 
+        position: fixed;
+      }
+
+      .name_content{
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .name_content_txt{
+        font-size: 12px;
+        padding: 0px 10px;
+        font-weight: bold;
+        color: lightgray;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 190px;
+      }
+    
+      .big_profile_box {
+        width: 60px;
+        height: 60px;
+        border-radius: 70%;
+        overflow: hidden;
+      }
+    
+      .link_txt{
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    
+      .recommend_box {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        align-items: center;
+      }
+    
+      .comment_box{
+        margin: 40px 0 0 5px;
+        font-size: 12px;
+        font-weight: bold;
+        color: lightgray;
+        display: flex;
+        flex-direction: column;
+      }
+
+    </style>
+
     <title>Sootagram</title>
+
   </head>
   <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100%;height: 50px;position: fixed;">
         <div class="container">
-            <img style="height: 30px; object-fit: contain" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png">
+            <img style="height: 30px; object-fit: contain" 
+            
+            src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png">
             <input class="form-control" style="width: 200px" type="search" placeholder="Search" aria-label="Search">
 
             <!-- navbar icons -->
@@ -32,6 +171,148 @@
             </div>
         </div>
     </nav>
+
+    <!-- feed -->
+    <div class="main_feed">
+      <div class="left_feed">  
+        <div class="feed_box">
+
+          <div class="feed_name">
+            <div class="profile_box">
+              <img class="profile_img" src="https://t1.daumcdn.net/cafeattach/aVeZ/96bb985f315f63a2fe16120d8b0fec4b589ac4e9">
+            </div>
+            <span class="feed_name_txt"> suzy022 </span>
+          </div>
+
+          <img class="feed_img" src="https://pbs.twimg.com/media/D4uU-sCUcAA6doH?format=jpg&name=900x900">
+          <div class="feed_icon">
+            <div>
+              <span class="material-icons-outlined">
+                favorite_border
+              </span>
+              <span class="material-icons-outlined">
+                mode_comment
+              </span>
+              <span class="material-icons-outlined">
+                send
+              </span>
+            </div>
+            <div>
+              <span class="material-icons-outlined">
+                turned_in_not
+              </span>
+            </div>
+          </div>
+          <div class="feed_like">
+            <p class="feed_txt"> <b>좋아요 10개</b></p>
+          </div>
+          <div class="feed_content">
+            <p class="feed_txt"> <b> suzy022 </b> 헉 성공 !? </p>
+          </div>
+          <div class="feed_reply">
+            <span class="feed_txt"> <b> chew012 </b> 축하해 ~ </span>
+            <span class="feed_txt"> <b> hoo486 </b> 멋찌다 ~ </span>
+          </div>
+        </div>
+      </div>
+      <div class="right_feed">
+        <div class="feed_name" style="justify-content: space-between">
+          <div style="display: flex; align-items: center; ">
+            <div class="big_profile_box">
+              <img class="profile_img"
+                   src="https://t1.daumcdn.net/cafeattach/aVeZ/96bb985f315f63a2fe16120d8b0fec4b589ac4e9">
+            </div>
+            <div class="name_content">
+              <span class="feed_name_txt"> suzy022 </span>
+              <span class="name_content_txt"> Kang Soo</span>
+            </div>
+          </div>
+    
+          <a class="link_txt" >
+            전환
+          </a>
+        </div>
+    
+        <div class="recommend_box">
+          <span style="color: gray"> 회원님을 위한 추천</span>
+          <span style="font-size: 12px"> 모두 보기 </span>
+        </div>
+        <div>
+          <div class="feed_name" style="justify-content: space-between">
+            <div class="profile_box">
+              <img class="profile_img"
+                   src="https://t1.daumcdn.net/cafeattach/aVeZ/342a25f22c930afd3a92573975c54bc36ec5865c">
+            </div>
+            <div class="name_content">
+              <span class="feed_name_txt"> mememe </span>
+              <span class="name_content_txt"> Sootargram 신규가입</span>
+            </div>
+            <a class="link_txt">
+              팔로우
+            </a>
+          </div>
+          <div class="feed_name" style="justify-content: space-between">
+            <div class="profile_box">
+              <img class="profile_img"
+                   src="https://t1.daumcdn.net/cafeattach/aVeZ/e74ed63424c35876233091248583e881f867d2f6">
+            </div>
+            <div class="name_content">
+              <span class="feed_name_txt"> goodsta </span>
+              <span class="name_content_txt"> mememe 외 5명이 팔로우</span>
+            </div>
+            <a class="link_txt">
+              팔로우
+            </a>
+          </div>
+          <div class="feed_name" style="justify-content: space-between">
+            <div class="profile_box">
+              <img class="profile_img"
+                   src="https://t1.daumcdn.net/cafeattach/aVeZ/c70b6fc6cc425f2ed835e7afc46e0199037e6f0f">
+            </div>
+            <div class="name_content">
+              <span class="feed_name_txt"> donals </span>
+              <span class="name_content_txt"> mememe 외 5명이 팔로우</span>
+            </div>
+            <a class="link_txt">
+              팔로우
+            </a>
+          </div>
+          <div class="feed_name" style="justify-content: space-between">
+            <div class="profile_box">
+              <img class="profile_img"
+                   src="https://t1.daumcdn.net/cafeattach/aVeZ/de802cd8c4cf9afe0637b220fef335417f1bc991">
+            </div>
+            <div class="name_content">
+              <span class="feed_name_txt"> realinsta </span>
+              <span class="name_content_txt"> mememe 외 5명이 팔로우 </span>
+            </div>
+            <a class="link_txt">
+              팔로우
+            </a>
+          </div>
+          <div class="feed_name" style="justify-content: space-between">
+            <div class="profile_box">
+              <img class="profile_img"
+                   src="https://t1.daumcdn.net/cafeattach/aVeZ/4fb7306d95bb2be1ffe3d83c4a94c4a2c970ccbf">
+            </div>
+            <div class="name_content">
+              <span class="feed_name_txt"> rams </span>
+              <span class="name_content_txt"> Sootargram 신규가입 </span>
+            </div>
+            <a class="link_txt">
+              팔로우
+            </a>
+          </div>
+        </div>
+        <div class="comment_box">
+          <span> INSTAGRAM CLONECODING </span>
+          <span> https://kangsu-2ji.tistory.com/ </span>
+          <br>
+          <span> 2022 INSTAGRAM @kangsu-2ji </span>
+    
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
