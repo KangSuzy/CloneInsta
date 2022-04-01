@@ -174,17 +174,18 @@
 
     <!-- feed -->
     <div class="main_feed">
-      <div class="left_feed">  
+      <div class="left_feed">
+        {% for feed in feed_list %}
         <div class="feed_box">
 
           <div class="feed_name">
             <div class="profile_box">
-              <img class="profile_img" src="https://t1.daumcdn.net/cafeattach/aVeZ/96bb985f315f63a2fe16120d8b0fec4b589ac4e9">
+              <img class="profile_img" src="{{ feed.profile_image }}">
             </div>
-            <span class="feed_name_txt"> suzy022 </span>
+            <span class="feed_name_txt"> {{ feed.user_id }} </span>
           </div>
 
-          <img class="feed_img" src="https://pbs.twimg.com/media/D4uU-sCUcAA6doH?format=jpg&name=900x900">
+          <img class="feed_img" src="{{ feed.image }}">
           <div class="feed_icon">
             <div>
               <span class="material-icons-outlined">
@@ -204,16 +205,17 @@
             </div>
           </div>
           <div class="feed_like">
-            <p class="feed_txt"> <b>좋아요 10개</b></p>
+            <p class="feed_txt"> <b>좋아요 {{ feed.like_cnt }}개</b></p>
           </div>
           <div class="feed_content">
-            <p class="feed_txt"> <b> suzy022 </b> 헉 성공 !? </p>
+            <p class="feed_txt"> <b> {{ feed.user_id }} </b> {{ feed.content }} </p>
           </div>
           <div class="feed_reply">
             <span class="feed_txt"> <b> chew012 </b> 축하해 ~ </span>
             <span class="feed_txt"> <b> hoo486 </b> 멋찌다 ~ </span>
           </div>
         </div>
+        {% endfor %}
       </div>
       <div class="right_feed">
         <div class="feed_name" style="justify-content: space-between">
