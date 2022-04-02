@@ -6,10 +6,10 @@ and I've documented it in detail on my blog in the form of a tutorial.
 
 # [tutorial](https://kangsu-2ji.tistory.com/132)
 
-- ~~장고 프로젝트 생성 및 보여지는 화면구성 - use bootstrap & google font icon~~
-- ~~화면구성 2 - 인스타그램 전체적인 피드 구성~~
+- 장고 프로젝트 생성 및 보여지는 화면구성 - use bootstrap & google font icon
+- 화면구성 2 - 인스타그램 전체적인 피드 구성
 - 백엔드 model 구현
-- 
+- 피드 이미지 업로드 기능 구현 ( Javascript + Jquery 드레그앤드롭 )
 
 Let's review Django and study planning and development elements through clone coding !
 
